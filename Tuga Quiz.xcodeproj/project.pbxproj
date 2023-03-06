@@ -10,9 +10,11 @@
 		79E4932F29B52EDF009889F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E4932E29B52EDF009889F4 /* AppDelegate.swift */; };
 		79E4933129B52EDF009889F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E4933029B52EDF009889F4 /* SceneDelegate.swift */; };
 		79E4933329B52EDF009889F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E4933229B52EDF009889F4 /* ViewController.swift */; };
-		79E4933629B52EDF009889F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E4933429B52EDF009889F4 /* Main.storyboard */; };
 		79E4933829B52EDF009889F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E4933729B52EDF009889F4 /* Assets.xcassets */; };
 		79E4933B29B52EDF009889F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E4933929B52EDF009889F4 /* LaunchScreen.storyboard */; };
+		79E4934629B52FA9009889F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E4934529B52FA9009889F4 /* Main.storyboard */; };
+		79E4934829B530D0009889F4 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E4934729B530D0009889F4 /* QuizBrain.swift */; };
+		79E4934A29B530ED009889F4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E4934929B530ED009889F4 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		79E4932E29B52EDF009889F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E4933029B52EDF009889F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		79E4933229B52EDF009889F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79E4933529B52EDF009889F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79E4933729B52EDF009889F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79E4933A29B52EDF009889F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79E4933C29B52EDF009889F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E4934529B52FA9009889F4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		79E4934729B530D0009889F4 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		79E4934929B530ED009889F4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		79E4932D29B52EDF009889F4 /* Tuga Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				79E4934229B52F16009889F4 /* Model */,
+				79E4934329B52F24009889F4 /* View */,
+				79E4934429B52F2B009889F4 /* Controller */,
 				79E4932E29B52EDF009889F4 /* AppDelegate.swift */,
 				79E4933029B52EDF009889F4 /* SceneDelegate.swift */,
-				79E4933229B52EDF009889F4 /* ViewController.swift */,
-				79E4933429B52EDF009889F4 /* Main.storyboard */,
 				79E4933729B52EDF009889F4 /* Assets.xcassets */,
 				79E4933929B52EDF009889F4 /* LaunchScreen.storyboard */,
 				79E4933C29B52EDF009889F4 /* Info.plist */,
 			);
 			path = "Tuga Quiz";
+			sourceTree = "<group>";
+		};
+		79E4934229B52F16009889F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79E4934729B530D0009889F4 /* QuizBrain.swift */,
+				79E4934929B530ED009889F4 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79E4934329B52F24009889F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79E4934529B52FA9009889F4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79E4934429B52F2B009889F4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79E4933229B52EDF009889F4 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E4934629B52FA9009889F4 /* Main.storyboard in Resources */,
 				79E4933B29B52EDF009889F4 /* LaunchScreen.storyboard in Resources */,
 				79E4933829B52EDF009889F4 /* Assets.xcassets in Resources */,
-				79E4933629B52EDF009889F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +168,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E4934A29B530ED009889F4 /* Question.swift in Sources */,
 				79E4933329B52EDF009889F4 /* ViewController.swift in Sources */,
 				79E4932F29B52EDF009889F4 /* AppDelegate.swift in Sources */,
 				79E4933129B52EDF009889F4 /* SceneDelegate.swift in Sources */,
+				79E4934829B530D0009889F4 /* QuizBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79E4933429B52EDF009889F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79E4933529B52EDF009889F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79E4933929B52EDF009889F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,11 +314,11 @@
 				DEVELOPMENT_TEAM = B2C3JLZ95V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tuga Quiz/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +342,11 @@
 				DEVELOPMENT_TEAM = B2C3JLZ95V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tuga Quiz/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.trivia-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
